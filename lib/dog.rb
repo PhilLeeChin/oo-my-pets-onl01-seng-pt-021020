@@ -18,4 +18,8 @@ class Dog
   def save
     @@all << self
   end
+
+  def owner
+    owner = Owner.new
+  end
 end
