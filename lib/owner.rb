@@ -2,6 +2,7 @@ class Owner
   # code goes here
   attr_accessor :name, :type
   attr_reader :species
+  
   @@all = []
 
   def initialize(name)
@@ -20,5 +21,9 @@ class Owner
 
   def say_species
     "I am a #{species}."
+  end
+
+  def self.count
+    self.all.count
   end
 end
