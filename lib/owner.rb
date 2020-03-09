@@ -17,4 +17,8 @@ class Owner
   def save
     @@all << self
   end
+
+  def say_species
+    return "I am a #{species}."
+  end
 end
