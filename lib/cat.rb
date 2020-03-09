@@ -2,8 +2,8 @@ class Cat
   # code goes here
   attr_reader :name, :owner
 
-  def initialize(name)
-    @name = name
+  def initialize(cat)
+    @name = cat
     @owner = owner
   end
 end
