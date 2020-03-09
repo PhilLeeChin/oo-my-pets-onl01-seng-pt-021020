@@ -1,8 +1,4 @@
 class Owner
   # code goes here
-
-  def all
-
-  end
-
+  attr_accessor :name
 end
