@@ -31,8 +31,4 @@ class Owner
   def self.reset_all
     self.all.clear
   end
-
-  def dogs
-    Dog.all.select {|dog| dog.owner == self}
-  end
 end
