@@ -1,10 +1,10 @@
 class Owner
   # code goes here
-  attr_accessor :name, :type, :species
-
+  attr_accessor :name, :type
+  attr_reader :species
   @@all = []
 
-  def initialize(name)
+  def initialize(species)
     @name = name
     @species = species
     save
