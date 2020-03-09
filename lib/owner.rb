@@ -1,12 +1,13 @@
 class Owner
   # code goes here
-  attr_accessor :name, :type
+  attr_accessor :name, :type, :owner
   attr_reader :species
 
   @@all = []
 
   def initialize(name)
     @name = name
+    @owner = owner
     @species = "human"
     save
   end
