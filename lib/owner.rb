@@ -1,7 +1,7 @@
 class Owner
   # code goes here
-  attr_accessor :name, :type, :owner
-  attr_reader :species
+  attr_accessor :name, :type
+  attr_reader :species, :owner
 
   @@all = []
 
@@ -10,10 +10,6 @@ class Owner
     @owner = owner
     @species = "human"
     save
-  end
-
-  def name
-    @name != @owner
   end
 
   def self.all
