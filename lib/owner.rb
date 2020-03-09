@@ -12,6 +12,10 @@ class Owner
     save
   end
 
+  def name
+    @name != @owner
+  end
+
   def self.all
     @@all
   end
