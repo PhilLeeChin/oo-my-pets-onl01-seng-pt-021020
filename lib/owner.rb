@@ -2,8 +2,10 @@ class Owner
   # code goes here
   attr_accessor :name, :type
 
+  @@all = []
+
   def initialize(name)
     @name = name
-    @type = "human"
+    @@all << self
   end
 end
